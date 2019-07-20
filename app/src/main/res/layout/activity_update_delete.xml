@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="activity.UpdateDelete">
+
+    <EditText
+        android:id="@+id/edtUDname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/edtUDemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUDname"
+        android:enabled="false"
+        android:hint="email" />
+
+    <EditText
+        android:id="@+id/edtUDmobno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUDemail"
+        android:hint="mobileno" />
+
+    <EditText
+        android:id="@+id/edtUDaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUDmobno"
+        android:hint="address" />
+
+    <Button
+        android:id="@+id/btnUDupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/edtUDaddress" />
+    <Button
+        android:id="@+id/btnUDdelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnUDupdate" />
+
+</RelativeLayout>
